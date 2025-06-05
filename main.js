@@ -3,8 +3,6 @@ let tamanhoSenha = 12;
 numeroSenha.textContent = tamanhoSenha;
 
 const botoes = document.querySelectorAll('.parametro-senha__botao');
-
-
 botoes[0].onclick = diminuiTamanho;
 botoes[1].onclick = aumentaTamanho;
 
@@ -27,13 +25,11 @@ function aumentaTamanho(){
 }
 
 const campoSenha = document.querySelector('#campo-senha');
-
 const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVXYWZ';
 geraSenha();
 
-
 function geraSenha(){
-    let senha = '' ”;
+    let senha = '';
     for (let i = 0; i < tamanhoSenha;i++){
         let numeroAleatorio = Math.random()*letrasMaiusculas.length;
         numeroAleatorio = Math.floor(numeroAleatorio);
