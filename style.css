@@ -132,7 +132,11 @@ label{
     background-color: #E71B32;
     position: relative;
     bottom: 30px;
+    
 }
+
+
+
 .media{
     height: 30px;
     width: 50%;
@@ -147,6 +151,8 @@ label{
     position: relative;
     bottom: 30px;
 }
+
+
 .parametro-senha-textos {
     display: flex;
     justify-content: space-between;
