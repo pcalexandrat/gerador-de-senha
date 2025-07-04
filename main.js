@@ -1,5 +1,5 @@
 const numeroSenha = document.querySelector('.parametro-senha__texto');
-let tamanhoSenha = 12;
+let tamanhoSenha = 5;
 numeroSenha.textContent = tamanhoSenha;
 const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVXYWZ';
 const letrasMinusculas = 'abcdefghijklmnopqrstuvxywz';
@@ -67,6 +67,8 @@ function geraSenha() {
 }
 
 function classificaSenha(){
+let entropia = tamanhoSenha * Math.log2(alfabeto.length);
+console.log(entropia);
 forcaSenha.classList.remove('fraca','media','forte');
 
 if (tamanhoSenha > 11){
@@ -76,6 +78,6 @@ if (tamanhoSenha > 11){
         forcaSenha.classList.add('media');
     } else if (tamanhoSenha <= 5){
 
-forcaSenha.classList.add('forte');
+forcaSenha.classList.add('fraca');
 }
 }
